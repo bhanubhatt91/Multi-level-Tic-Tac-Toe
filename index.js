@@ -60,7 +60,7 @@ const calculatewinner = () => {
     return false;
   }
 
-  //check for column
+  //check for row & column
   for (let i = 0; i < len; i++) {
     if (board[i].every((el) => el === board[i][0] && el !== "")) {
       return true;
